@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
+import { HeroService } from '../hero.service';
 import { Hero } from '../model/hero';
 
 
