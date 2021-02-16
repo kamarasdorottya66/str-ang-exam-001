@@ -15,10 +15,9 @@ export class HeroDetailsComponent implements OnInit {
   constructor(private ar: ActivatedRoute, 
     private hService: HeroService) { 
     this.ar.params.subscribe( params => {
-this.hService.getOne(params.id).forEach( (hero: Hero | undefined) => {
-  this.hero = hero;
+this.hService.getOne(params.id) 
 });
-    });
+    
   }
 
   ngOnInit(){
