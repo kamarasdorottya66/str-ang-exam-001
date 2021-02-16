@@ -10,6 +10,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { HomeComponent } from './home/home.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { from } from 'rxjs';
+import { HeroComponent } from './hero/hero.component';
 
 const appRoutes: Routes = [
  { 
@@ -27,7 +28,8 @@ const appRoutes: Routes = [
     AppComponent,
     NavigationComponent,
     HomeComponent,
-    HeroesComponent
+    HeroesComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,

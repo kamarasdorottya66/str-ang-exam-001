@@ -8,9 +8,5 @@ import { Hero } from './model/hero';
 })
 export class AppComponent {
   title = 'my-app';
-  myHero: Hero = {
-    name: "Magneto",
-    address: "Budapest",
-    superpower: "magnetic"
-  };
+  
 }
