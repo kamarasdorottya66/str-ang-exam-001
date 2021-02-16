@@ -10,7 +10,8 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { HomeComponent } from './home/home.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { from } from 'rxjs';
-import { HeroComponent } from './hero/hero.component';
+import { HeroDetailsComponent } from './hero-details/hero-details.component';
+
 
 const appRoutes: Routes = [
  { 
@@ -21,6 +22,10 @@ const appRoutes: Routes = [
    path: "heroes", 
    component: HeroesComponent
  }
+ {
+  path: "hero/:id", 
+  component: HeroDetailsComponent
+}
 ];
 
 @NgModule({
@@ -29,7 +34,8 @@ const appRoutes: Routes = [
     NavigationComponent,
     HomeComponent,
     HeroesComponent,
-    HeroComponent
+    HeroDetailsComponent,
+    
   ],
   imports: [
     BrowserModule,

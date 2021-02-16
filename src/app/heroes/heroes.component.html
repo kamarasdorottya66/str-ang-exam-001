@@ -1,2 +1,28 @@
-<app-hero></app-hero>
 
+
+<div class="row">
+    <div class="col-8ofset-2">
+        <table class="table table-striped">
+            <thead>
+                <tr >
+                    <th>#</th>
+                    <th>name</th>
+                    <th>address</th>
+                    <th>superpower</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let hero of heroList async">
+                    <td>{{ hero.id }}</td>
+                    <td>{{ hero.name}} </td>
+                    <td>{{ hero.address}} </td>
+                    <td>{{her.superpower}}</td>
+                    <td>
+                        <button (click)="jumpToHero(hero)" class="btn btn-info">details</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
