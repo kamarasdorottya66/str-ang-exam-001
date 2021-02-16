@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { HeroService } from '../hero.service';
 import { Hero } from '../model/hero';
 
 @Component({
@@ -20,7 +21,7 @@ this.hService.getOne(params.id).forEach( (hero: Hero | undefined) => {
     });
   }
 
-  ngOnInit(): void {
+  ngOnInit(){
   }
 
 }

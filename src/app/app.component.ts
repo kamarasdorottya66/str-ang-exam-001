@@ -11,7 +11,8 @@ export class AppComponent {
   myHero: Hero = {
     name: "Batman",
     address: "Gotham",
-    superpower: "speed"
+    superpower: "speed",
+    id: "1"
   };
   
 }
